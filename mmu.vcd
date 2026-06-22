@@ -1,0 +1,113 @@
+$date
+	Mon Jun 22 20:36:55 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mmu $end
+$var wire 1 ! translation_valid $end
+$var wire 1 " protection_fault $end
+$var wire 16 # physical_addr [15:0] $end
+$var wire 1 $ page_fault $end
+$var reg 1 % access_type $end
+$var reg 1 & enable $end
+$var reg 16 ' virtual_addr [15:0] $end
+$scope module DUT $end
+$var wire 1 % access_type $end
+$var wire 1 & enable $end
+$var wire 16 ( virtual_addr [15:0] $end
+$var wire 1 ) write_perm $end
+$var wire 1 * valid_bit $end
+$var wire 1 + read_perm $end
+$var wire 8 , page_number [7:0] $end
+$var wire 8 - offset [7:0] $end
+$var wire 8 . frame_number [7:0] $end
+$var reg 1 $ page_fault $end
+$var reg 16 / physical_addr [15:0] $end
+$var reg 1 " protection_fault $end
+$var reg 1 ! translation_valid $end
+$scope module PT $end
+$var wire 8 0 page_number [7:0] $end
+$var reg 8 1 frame_number [7:0] $end
+$var reg 1 + read_perm $end
+$var reg 1 * valid_bit $end
+$var reg 1 ) write_perm $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10100001 1
+b1 0
+b1010000100010000 /
+b10100001 .
+b10000 -
+b1 ,
+1+
+1*
+1)
+b100010000 (
+b100010000 '
+1&
+0%
+0$
+b1010000100010000 #
+0"
+1!
+$end
+#20000
+b1010000100100000 #
+b1010000100100000 /
+1!
+b100000 -
+1%
+b100100000 '
+b100100000 (
+#40000
+1"
+0)
+1+
+1*
+b10110010 .
+b10110010 1
+b0 #
+b0 /
+0!
+b10 ,
+b10 0
+b110000 -
+b1000110000 '
+b1000110000 (
+#60000
+1$
+0+
+0*
+b11010100 .
+b11010100 1
+0!
+b0 #
+b0 /
+0"
+b100 ,
+b100 0
+b1000000 -
+0%
+b10001000000 '
+b10001000000 (
+#80000
+b0 .
+b0 1
+1$
+b101 ,
+b101 0
+b1010000 -
+b10101010000 '
+b10101010000 (
+#100000
